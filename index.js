@@ -4,6 +4,8 @@ const btn=document.querySelector(".toggle");
 const main=document.querySelector("main");
 
 
+
+
 let dark=false
 const animationFtn=function(){
     dark=!dark
@@ -22,7 +24,7 @@ const animationFtn=function(){
     }};
 
     btn.addEventListener("click", animationFtn);
-
+ 
 
 const navMenuSlide=()=>{
 const navMenu=document.querySelector(".nav-menu");
@@ -41,5 +43,6 @@ burger.addEventListener("click", ()=>{
 burger.classList.toggle("toggleHam");
 })
 }
+
 
 navMenuSlide();

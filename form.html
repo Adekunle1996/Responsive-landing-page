@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form page</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/font-icons/css/all.css">
+</head>
+<body>
+    <main class="big-wrapper">
+        <div class="container">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+         <form autocomplete="off" target="_self">
+         <div class="form-control">
+         <input type="text" id="contact-name" name="FirstName" placeholder="FirstName" pattern="[A-Z][a-z]*" title="name should contain only letters and the first character must be begin with capital letter" required>
+         <span class="check"><i class='fas fa-check'></i></span>
+         </div>
+         <div class="form-control">
+            <input type="text" name="LastName" placeholder="LasttName" pattern="[A-Z][a-z]*" title="name should contain only letters and the first chracter must begin with capital letter" required>
+            <span class="check"><i class='fas fa-check'></i></span>
+            </div>
+           <div class="form-control">
+            <input type="text" name="UserName" placeholder="UserName" pattern="[\w\.\-]*" title="username can only conatain letters, numbers and any of the following symbols(.-_)" required>
+            <span class="check"><i class='fas fa-check'></i></span>
+            </div>
+         <div class="form-control">
+            <input type="password" name="password" placeholder="password" pattern='(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[/./-/_]).{8,}'title="password must have a length of minimum of 10 chracters containing atleast one uppercase, lowercase, numbers and any of the following the symbol(.-_)" required>
+            <span class="check"><i class='fas fa-check'></i></span>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="Gmail" pattern='([\w/./_]+)[@]([a-z]{5})[/.]([a-z]{3})'title="text123._-@gmail.com" required>
+                <span class="check"><i class='fas fa-check'></i></span>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="PhoneNo" placeholder="PhoneNo" pattern="[\d]{11}" title="number must contain 11 digit" required>
+                    <span class="check"><i class='fas fa-check'></i></span>
+                    </div>
+            <div class="form-control">
+                <input type="text" name="gender" placeholder="Gender" pattern="(male|female|MALE|FEMALE|Male|Female)" required>
+                <span class="check"><i class='fas fa-check'></i></span>
+                </div>
+                
+         <div class="form-control">
+         <button type="submit">submit</button>
+        </div>
+    </form>
+    </div>
+    </main>
+    <script src="practices.js"></script>
+</body>
+</html> 
